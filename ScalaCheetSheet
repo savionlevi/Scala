@@ -38,7 +38,7 @@ class cheetsheet {
   // You can define the type
   val lastName: String = "Banas"
 
-  // ---------- DATA TYPES ----------
+  // ############ DATA TYPES ############
 
   // All datatypes in Scala are objects and they include
   // (Get the max value with MaxValue)
@@ -109,7 +109,7 @@ class cheetsheet {
 
   // acos, asin, atan, atan2, cos, cosh, sin, sinh, tan, tanh
 
-  // ---------- CONDITIONALS ----------
+  // ############ CONDITIONALS ############
   // if statements are like Java except they return a value like the
   // ternary operator
 
@@ -137,7 +137,7 @@ class cheetsheet {
   object ScalaTut {
     def main(args: Array[String]) {
 
-      // ---------- LOOPING ----------
+      // ############ LOOPING ############
       // To compile and run in the terminal
       // 1. scalac ScalaTut.scala
       // 2. scala ScalaTut
@@ -213,7 +213,7 @@ class cheetsheet {
       printPrimes
 
 
-      // ---------- INPUT / OUTPUT ----------
+      // ############ INPUT / OUTPUT ############
 
       var numberGuess = 0
 
@@ -253,7 +253,7 @@ class cheetsheet {
 
       // Special Characters : \n, \b, \\, \a
 
-      // ---------- STRINGS ----------
+      // ############ STRINGS ############
       var randSent = "I saw a dragon fly by"
 
       // Get the 3rd index value
@@ -277,7 +277,7 @@ class cheetsheet {
       for (v <- randSentArray)
         println(v)
 
-      // ---------- FUNCTIONS ----------
+      // ############ FUNCTIONS ############
       // def funcName (param1:dataType, param2:dataType) : returnType = {
       //    function body
       //    return valueToReturn
@@ -325,7 +325,7 @@ class cheetsheet {
 
       println("Factorial of 4 = " + factorial(4))
 
-      // ---------- ARRAYS ----------
+      // ############ ARRAYS ############
       // You'll use arrays when the size is fixed, or an ArrayBuffer for a
       // variable size
 
@@ -410,7 +410,7 @@ class cheetsheet {
       // Return an indexed sequence and convert it into a string with commas
       println(sortedNums.deep.mkString(", "))
 
-      // ---------- MAPS ----------
+      // ############ MAPS ############
       // Maps are collections of key value pairs
 
       // Create a Map that can't be changed (Immutable)
@@ -436,7 +436,7 @@ class cheetsheet {
       for((k,v) <- customers)
         printf("%d : %s\n", k, v)
 
-      // ---------- TUPLES ----------
+      // ############ TUPLES ############
       // Tuples can hold values of many types, but they are immutable
 
       var tupleMarge = (103, "Marge Simpson", 10.25)
@@ -449,7 +449,7 @@ class cheetsheet {
       // Convert Tuple to String
       println(tupleMarge.toString())
 
-      // ---------- CLASSES ----------
+      // ############ CLASSES ############
       val rover = new Animal
       rover.setName("Rover")
       rover.setSound("Woof")
@@ -469,13 +469,13 @@ class cheetsheet {
       fang.moveSpeed = 36.0
       println(fang.move)
 
-      // ---------- TRAITS ----------
+      // ############ TRAITS ############
       val superman = new Superhero("Superman")
       println(superman.fly)
       println(superman.hitByBullet)
       println(superman.ricochet(2500))
 
-      // ---------- HIGHER ORDER FUNCTIONS ----------
+      // ############ HIGHER ORDER FUNCTIONS ############
       // Functions can be passed like any other variable
       // You need the _ after the function to state you meant the function
       val log10Func = log10 _
@@ -509,7 +509,7 @@ class cheetsheet {
       val divisor5 = (num : Double) => num / divisorVal
       println("5 / 5 = " + divisor5(5.0))
 
-      // ---------- FILE I/O ----------
+      // ############ FILE I/O ############
       // Use import java.io.PrintWriter to write to a file
       val writer = new PrintWriter("test.txt")
       writer.write("Just some random text\nSome more random text")
@@ -525,7 +525,7 @@ class cheetsheet {
       }
       textFromFile.close()
 
-      // ---------- EXCEPTION HANDLING ----------
+      // ############ EXCEPTION HANDLING ############
 
       def divideNums(num1 : Int, num2 : Int) = try
       {
@@ -540,7 +540,7 @@ class cheetsheet {
 
     } // ---------- END OF MAIN ----------
 
-    // ---------- CLASSES ----------
+    // ############ CLASSES ############
     // Classes are used as blueprints to create objects
     // Objects define the attributes (fields) and capabilities (methods) of an
     // object
@@ -608,7 +608,7 @@ class cheetsheet {
       private def newIdNum = { idNumber += 1; idNumber }
     }
 
-    // ---------- INHERITANCE ----------
+    // ############ INHERITANCE ############
     // A class that inherits from another gains all its fields and methods
     // A class declared final can't be extended
     class Dog (name : String, sound : String, growl : String) extends
@@ -635,7 +635,7 @@ class cheetsheet {
       }
     }
 
-    // ---------- ABSTRACT CLASS ----------
+    // ############ ABSTRACT CLASS ############
     // An abstract class can't be instantiated. It is made up of both abstract
     // and non-abstract methods and fields
 
@@ -656,7 +656,7 @@ class cheetsheet {
 
     }
 
-    // ---------- TRAITS ----------
+    // ############ TRAITS ############
     // A trait is a like a Java interface in that a class can extend more then 1
     // Unlike Java interfaces traits can provide concrete methods and fields
     trait Flyable {

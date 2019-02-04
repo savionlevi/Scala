@@ -42,7 +42,7 @@ class mySingletonSet {
   }
 
   def diff(firstSingleton : Set[Int] , secondSingleton : Set[Int]) : Set[Int] = {
-    println("printing you set kind sir ! ")
+    println("printing your set kind sir ! ")
     var diffSet = firstSingleton ++ secondSingleton
     return diffSet
   }

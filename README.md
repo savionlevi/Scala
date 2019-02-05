@@ -5,4 +5,4 @@ this repo includes:
 
 DATA TYPES ,CONDITIONALS , LOOPING , INPUT / OUTPUT , STRINGS , FUNCTIONS , ARRAYS , MAPS , TUPLES , CLASSES, TRAITS , HIGHER ORDER FUNCTIONS, FILE I/O,  EXCEPTION HANDLING, CLASSES, INHERITANCE, ABSTRACT CLASS, COLLECTIONS [lists, sets, maps, tuples, options, iterators] , Regular Expressions
 
-2) classes that give examples of: functions, arrays, arrayBuffer, objects, classes, Map, List, functions
+2) classes with examples of: functions, arrays, arrayBuffer, objects, classes, Map, List.

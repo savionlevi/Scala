@@ -290,6 +290,11 @@ class cheetsheet {
 
       println("5 + 4 = " + getSum(5,4))
 
+      // You can give parameters default values #2
+      // calling funcwithDefault("hello") will return "[hello]"
+      def funcWithDefault(str: String , left: String = "[", right: String = "]") = {
+        left + str + right
+      }
       // you can use named arguments
       println("5 + 4 = " + getSum(num2=5, num1=4))
 

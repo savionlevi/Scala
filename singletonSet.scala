@@ -1,5 +1,7 @@
 import  scala.collection.mutable.Set
 
+// Class related to Set collection
+
 object singletonSet extends App {
 
   var firstSingleton = new mySingletonSet()

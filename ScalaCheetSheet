@@ -69,6 +69,10 @@ class cheetsheet {
   // randInt.isInstanceOf[Int] checks if is of type Int
 
   // ---------- MATH ----------
+  
+  // isPrime in 1 line
+  def isPrime(n : Int) : Boolean = (2 until n) forall(d => n%d!=0)
+  
   "5 + 4 = " + (5 + 4)
   "5 - 4 = " + (5 - 4)
   "5 * 4 = " + (5 * 4)

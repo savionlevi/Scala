@@ -138,6 +138,13 @@ class cheetsheet {
     def main(args: Array[String]) {
 
       // ############ LOOPING ############
+      // --- Range --- 
+      // var r : Range = 1 until 5 // 1,2,3,4
+      // val s: Range = 1 to 5 // 1,2,3,4,5
+      // 1 to 10 by 3 // 1,4,7,10
+      // 6 to 1 by -2 //
+      
+      
       // To compile and run in the terminal
       // 1. scalac ScalaTut.scala
       // 2. scala ScalaTut
@@ -331,6 +338,10 @@ class cheetsheet {
       println("Factorial of 4 = " + factorial(4))
 
       // ############ ARRAYS ############
+      
+      val xs  = Array(1,2,3,44)
+      xs map ( x => x * 2) // 2,4,6,88
+      
       // You'll use arrays when the size is fixed, or an ArrayBuffer for a
       // variable size
 

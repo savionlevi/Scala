@@ -672,22 +672,61 @@ class cheetsheet {
 
     }
 
-    // ############ TRAITS ############
-    // A trait is a like a Java interface in that a class can extend more then 1
-    // Unlike Java interfaces traits can provide concrete methods and fields
-    trait Flyable {
-      def fly : String
+    // ############ COLLECTIONS ############
+    
+    // sequence operation: sum , max , product , exists
+    // example: 
+     val aList = List(1,2,3,4,5)
+     aList.sum
+     aList.max
+     aList.product
+     aList.exists
+     
+     // ############ TUPLE ############
+      A tuple groups together simple logical collections of items without using a class.
 
-    }
+      scala> val hostPort = ("localhost", 80)
+      hostPort: (String, Int) = (localhost, 80)
+      Unlike case classes, they don’t have named accessors, instead they have accessors that are named by their position and is 1-based rather than 0-based.
 
-    trait Bulletproof {
-      def hitByBullet : String
+      scala> hostPort._1
+      res0: String = localhost
 
-      // You can define concrete methods in traits
-      def ricochet(startSpeed : Double) : String = {
-        "The bullet ricochets at a speed of %.1f ft/sec".format(startSpeed * .75)
+      scala> hostPort._2
+      res1: Int = 80
+      Tuples fit with pattern matching nicely.
+
+      hostPort match {
+        case ("localhost", port) => ...
+        case (host, port) => ...
       }
-    }
+      Tuple has some special sauce for simply making Tuples of 2 values: ->
+
+      scala> 1 -> 2
+      res0: (Int, Int) = (1,2)
+      
+      ############ SETS ############
+      Sets do not preserve order and have no duplicates
+
+      scala> val numbers = Set(1, 2, 3, 4, 5, 1, 2, 3, 4, 5)
+      numbers: scala.collection.immutable.Set[Int] = Set(5, 1, 2, 3, 4)
+
+        // ############ TRAITS ############
+        // A trait is a like a Java interface in that a class can extend more then 1
+        // Unlike Java interfaces traits can provide concrete methods and fields
+        trait Flyable {
+          def fly : String
+
+        }
+
+        trait Bulletproof {
+          def hitByBullet : String
+
+          // You can define concrete methods in traits
+          def ricochet(startSpeed : Double) : String = {
+            "The bullet ricochets at a speed of %.1f ft/sec".format(startSpeed * .75)
+          }
+        }
 
     // The first trait starts with extends and then with for each other
     class Superhero(val name : String) extends Flyable with Bulletproof{

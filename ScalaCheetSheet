@@ -430,7 +430,16 @@ class cheetsheet {
       // Return an indexed sequence and convert it into a string with commas
       println(sortedNums.deep.mkString(", "))
 
-      // ############ MAPS ############
+
+      ############ COLLECTIONS ############
+      Maps  : val colors = Map("red" -> "#FF0000", "azure" -> "#F0FFFF")
+      Sets  : var s = Set(1,3,5,7)
+      Tuple
+      Lists : val fruit: List[String] = List("apples", "oranges", "pears")
+      Options
+      Iterator
+      
+       ############ MAPS ############
       // Maps are collections of key value pairs
 
       // Create a Map that can't be changed (Immutable)

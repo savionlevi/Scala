@@ -265,6 +265,9 @@ class cheetsheet {
       // Special Characters : \n, \b, \\, \a
 
       // ############ STRINGS ############
+      
+      // """ enclose a multiline string
+        """
       var randSent = "I saw a dragon fly by"
 
       // Get the 3rd index value
